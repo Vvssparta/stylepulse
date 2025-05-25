@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Pulse</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function sidebar(){
+            let sidebar = document.getElementById("sidebar");
+            let burger = document.getElementById("navigation");
+            
+            sidebar.style.display = "flex";
+            burger.style.display  = "none";
+        }
+        function hidesidebar(){
+            let sidebar = document.getElementById("sidebar");
+            let burger = document.getElementById("navigation");
+        
+            sidebar.style.display = "none";
+            burger.style.display  = "flex";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="navigation_bar">
+            <span class="h3">SP</span>
+            <a id="pc_a" class="homebtn" href=""><b>HOME</b></a>
+            <a id="pc_a" href="">CONNECT</a>
+            <a id="pc_a" href="">PROFILIO</a>
+            <a id="pc_a" href="">CONTACT</a>
+            <a id="pc_a" href="">SIGN UP</a>
+            <button id="navigation" class="navigation" onclick="sidebar()">&#9776</button>
+            <button class="backburger" id="backburger" onclick="hidesidebar()">&#9776</button>
+        </div>
+        
+    </header>
+        <div id="sidebar" class="sidebar">
+            <a id="mobile_a" class="homebtn" href=""><b>HOME</b></a>
+            <a id="mobile_a" href="">CONNECT</a>
+            <a id="mobile_a" href="">PROFILIO</a>
+            <a id="mobile_a" href="">CONTACT</a>
+            <a id="mobile_a" href="">SIGN UP</a>
+        </div>
+        <div class="webbody">
+            <h1><span style="color: cyan;">S</span>tyle <span style="color: cyan;">P</span>ulse</h1>
+            <div class="text">
+                <i>Stay trendy, stay ahead!</i><br>
+                <h2>Stay on trend with the Latest in Gadgets, Fashion, and More!</h2>
+                <p>Enjoy the best offers curated to suit your style.<br>
+                Whether you're upgrading your tech, refreshing your wardrobe,<br>
+                or finding the perfect gift, we've got you covered.</p>
+            </div>
+            <div class="buttons">
+                <button class="shopnow">Shop now</button>
+                <button class="learnmore">Learn more &gt;</button>
+            </div>
+        </div>
+        
+</body>
+</html>
