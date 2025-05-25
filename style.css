@@ -1,0 +1,380 @@
+        html{
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
+            background-image: url(liny.png);
+            color: rgb(200, 200, 200);
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .navigation_bar{
+            position: relative;
+            justify-content: right;
+            display: flex;
+            animation: dropdown 1s ease forwards;
+            opacity: 0;
+        }
+        @keyframes dropdown{
+            to{
+                opacity: 1;
+            }
+            from{
+                translate: 0 -30px;
+            }
+        }
+        .h3{
+            position:absolute;
+            color: cyan;
+            justify-content: left;
+            font-size: 2rem;
+            left: 1rem;
+            top: 1rem;
+            border: 1px solid cyan;
+            cursor:default;
+            padding: 10px;
+            text-shadow: 0px 0px 10px grey;
+        }
+        #pc_a{
+            text-decoration: none;
+            padding: 1.8rem;
+            color: rgb(203, 203, 203);
+            transition: 0.6s ease;
+            border-radius: 0px;
+            
+        }
+        #pc_a:hover{
+            cursor: pointer;
+            background-color: rgb(3, 240, 248);
+            color: black;
+            opacity: 0.4;
+            border-radius:0px 20px;
+        }
+        .homebtn{
+            color: cyan;
+        }
+        h1{
+            margin-bottom: 0px;
+            letter-spacing: 0.3rem;
+            font-size:4rem;
+            font-family:'Franklin Gothic Medium';
+        }
+        p{
+            line-height: 2.5rem;
+        }
+        .webbody{
+            position: relative;
+            left: 8rem;
+            top: 8rem;
+            animation: fadein 1.2s ease forwards;
+            opacity: 0;
+        }
+        @keyframes fadein{
+            to{
+                opacity: 1;
+                translate: 0px;
+            }
+            from{
+                translate:-40px;
+            }
+        }
+        .text{
+            padding-bottom: 3rem;
+        }
+        button{
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            letter-spacing: 0.05rem;
+            font-size: 1rem;
+        }
+        .buttons{
+            display: flex;
+            gap: 8%;
+        }
+        .shopnow{
+            position: relative;
+            border: 0;
+            color: rgb(89, 240, 243);
+            background: black;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            transition: 0.5s ease;
+        }
+        .shopnow::after{
+            content: '';
+            width: 105%;
+            height: 112%;
+            background: linear-gradient(to  right, grey,white,cyan,white,grey);
+            position: absolute;
+            z-index: -1;
+            border-radius: 50px;
+            
+        }
+        .shopnow:hover{
+            cursor: pointer;
+            box-shadow: 20px 0px 30px grey, -20px 0px 30px cyan;
+            background: rgb(215, 215, 215);
+            color: black;
+        }
+        .learnmore{
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            border: 0;
+            transition: 0.5s ease;
+            background:rgb(215, 215, 215) ;
+        }
+        .learnmore::after{
+            content: '';
+            width: 105%;
+            height: 112%;
+            background: linear-gradient(to  right, cyan,white,grey,white,cyan);
+            position: absolute;
+            z-index: -1;
+            border-radius: 50px;
+        }
+        .learnmore:hover{
+            background-color: black;
+            color: rgb(89, 240, 243);
+            box-shadow: 20px 0px 30px grey, -20px 0px 30px cyan;
+            cursor: pointer;
+        }
+        .navigation{
+            display: none;
+        }
+        .sidebar{
+            display: none;
+        }
+        .backburger{
+            display: none;
+        }
+
+        
+        
+
+
+
+
+
+
+
+
+
+
+        @media screen and (max-width:768px) {
+        html{
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
+            background-image: url(liny.png);
+            color: rgb(200, 200, 200);
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .navigation_bar{
+            position: relative;
+            justify-content: right;
+            display: flex;
+            animation: dropdown 1s ease forwards;
+            opacity: 0;
+            padding-bottom: 4rem ;
+        }
+        @keyframes dropdown{
+            to{
+                opacity: 1;
+            }
+            from{
+                translate: 0 -30px;
+            }
+        }
+        .h3{
+            position:absolute;
+            color: cyan;
+            justify-content: left;
+            font-size: 2rem;
+            left: 0.5rem;
+            top: 0.5rem;
+            border: 1px solid cyan;
+            cursor:default;
+            padding: 5px;
+            text-shadow: 0px 0px 20px cyan;
+        }
+        #pc_a{
+            display:none ;
+            text-decoration: none;
+            padding: 1.8rem;
+            color: rgb(203, 203, 203);
+            transition: 0.6s ease;
+            border-radius: 0px;
+            
+        }
+        #pc_a:hover{
+            display:none ;
+            background-color: rgb(3, 240, 248);
+            color: black;
+            opacity: 0.4;
+            border-radius:0px 20px;
+        }
+        #mobile_a{
+            display: flex;
+            text-decoration: none;
+            padding: 1.8rem;
+            color: rgb(203, 203, 203);
+            transition: 0.6s ease;
+            border-radius: 0px;
+            color: cyan;
+        }
+        #mobile_a:hover{
+            background-color: rgb(3, 240, 248);
+            color: black;
+            opacity: 0.4;
+            border-radius:0px;
+        }
+        .homebtn{
+            color: cyan;
+        }
+        h1{
+            margin-bottom: 0px;
+            letter-spacing: 0.1rem;
+            font-size:2rem;
+            font-family:'Franklin Gothic Medium';
+        }
+        h2{
+            font-size: 1rem;
+        }
+        p{
+            font-size: 1rem;
+            line-height:1.5rem;
+        }
+        .webbody{
+            position: relative;
+            left: 0.6rem;
+            top: 5.5rem;
+            animation: fadein 1.2s ease forwards;
+            opacity: 0;
+        }
+        @keyframes fadein{
+            to{
+                opacity: 1;
+                translate: 0px;
+            }
+            from{
+                translate:-40px;
+            }
+        }
+        .text{
+            padding-bottom: 3rem;
+        }
+        button{
+            padding: 0.8rem 0.6rem;
+            border-radius: 50px;
+            letter-spacing: 0.05rem;
+            font-size: 1rem;
+        }
+        .buttons{
+            display: flex;
+            gap: 8%;
+        }
+        .shopnow{
+            position: relative;
+            border: 0;
+            color: rgb(89, 240, 243);
+            background: black;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            transition: 0.5s ease;
+        }
+        .shopnow::after{
+            content: '';
+            width: 105%;
+            height: 112%;
+            background: linear-gradient(to  right, grey,white,cyan,white,grey);
+            position: absolute;
+            z-index: -1;
+            border-radius: 50px;
+            
+        }
+        .shopnow:hover{
+            cursor: pointer;
+            box-shadow: 20px 0px 30px grey, -20px 0px 30px cyan;
+            background: rgb(215, 215, 215);
+            color: black;
+        }
+        .learnmore{
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            border: 0;
+            transition: 0.5s ease;
+            background:rgb(215, 215, 215) ;
+        }
+        .learnmore::after{
+            content: '';
+            width: 105%;
+            height: 112%;
+            background: linear-gradient(to  right, cyan,white,grey,white,cyan);
+            position: absolute;
+            z-index: -1;
+            border-radius: 50px;
+        }
+        .learnmore:hover{
+            background-color: black;
+            color: rgb(89, 240, 243);
+            box-shadow: 20px 0px 30px grey, -20px 0px 30px cyan;
+            cursor: pointer;
+        }
+        .navigation{
+            padding: 1rem;
+            border: 0px;
+            display: flex;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            color: cyan;
+            background-color: black;
+            transition: 0.3s ease;
+        }
+        .navigation::after{
+            position: absolute;
+            content: '';
+            width: 110%;
+            height: 110%;
+            background: linear-gradient(to right,cyan, white,cyan,white);
+            z-index: -1;
+            border-radius: 50px;
+        }
+        .navigation:hover{
+            box-shadow:0px 0px 20px grey;
+            cursor: pointer;
+        }
+        .sidebar{
+            position: absolute;
+            display: flex;
+            background-color: rgb(14, 13, 13);
+            flex-direction: column;
+            justify-content:center ;
+            width: 50%;
+            right: 0;
+            z-index: 2;
+            display:none;
+            border: 1px solid cyan;
+            animation: fadein 1s backwards;
+        }
+        .backburger{
+            padding: 1rem;
+            border: 0px;
+            display: flex;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            background-color: cyan;
+            transition: 0.3s ease;
+            z-index: -11;
+        }
+        
+        }
+        
