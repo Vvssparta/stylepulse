@@ -1,0 +1,296 @@
+        html{
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
+            background-image: url(liny.png);
+            color: rgb(200, 200, 200);
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .navigation_bar{
+            position: relative;
+            justify-content: right;
+            display: flex;
+            animation: dropdown 1s ease forwards;
+            opacity: 0;
+        }
+        @keyframes dropdown{
+            to{
+                opacity: 1;
+            }
+            from{
+                translate: 0 -30px;
+            }
+        }
+        .h3{
+            position:absolute;
+            color: cyan;
+            justify-content: left;
+            font-size: 2rem;
+            left: 1rem;
+            top: 1rem;
+            border: 1px solid cyan;
+            border-radius: 1px 9px;
+            cursor:default;
+            padding: 5px;
+            text-shadow: 0px 0px 10px grey;
+            text-decoration: none;
+            transition: 0.4s ease;
+        }
+        .h3:hover{
+            text-shadow: 0px 0px 40px cyan;
+            box-shadow: 0px 0px 10px cyan;
+            cursor: pointer;
+        }
+        #pc_a{
+            text-decoration: none;
+            padding: 1.8rem;
+            color: rgb(203, 203, 203);
+            transition: 0.6s ease;
+            border-radius: 0px;
+            
+        }
+        #pc_a:hover{
+            cursor: pointer;
+            background-color: rgb(3, 240, 248);
+            color: black;
+            opacity: 0.4;
+            border-radius:0px 20px;
+        }
+        .homebtn{
+            color: cyan;
+        }
+        .navigation{
+            display: none;
+        }
+        .sidebar{
+            display: none;
+        }
+        .backburger{
+            display: none;
+        }
+        form{
+            width: 40%;
+            margin: auto;
+            padding-top: 7%;
+            animation: slowfadein 0.8s forwards;
+            opacity: 0;
+        }
+        @keyframes slowfadein {
+            to{
+                transform: translateY(0px);
+                opacity: 1;
+            }
+            from{
+                transform: translateY(40px);
+            }
+        }
+        h3{
+            color: rgb(1, 179, 179);
+            padding-bottom: 2rem;
+            margin-top: 0;
+        }
+        fieldset{
+            justify-items: center;
+            align-items: center;
+            background: linear-gradient(to top right,rgb(0, 213, 213, 0.3),rgb(3, 3, 3,0.2),rgb(3, 3, 3,0.2),rgb(0, 213, 213, 0.3));
+            border: 1px solid cyan;
+            border-radius: 1px 20px;
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+        .filedsinput{
+            background: transparent;
+            border: 1px solid cyan;
+            position: relative;
+            padding: 0.5rem;
+            font-size: 1rem;
+            border-radius: 1px 6px;
+            color: cyan;
+            transition: 0.2s;
+        }
+        .filedsinput:hover{
+            box-shadow: 0px 0px 6px cyan;
+        }
+        .filedsinput:focus{
+            outline:none;
+            box-shadow: 0px 0px 6px cyan;
+        }
+        .custombutton{
+            display: flex;
+            gap: 3.4rem;
+        }
+        .submit{
+            padding: 0.5rem;
+            background: linear-gradient(to top right,rgb(52, 51, 51) ,cyan,cyan,rgb(31, 31, 31));
+            border: 0px;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 1px 6px;
+            transition: 0.3s;position: relative;
+        }
+        .submit:hover{
+            cursor: pointer;
+            color: white;
+            background: black;
+            box-shadow: 0px 0px 10px gray, 0px 0px 10px cyan;
+        }
+        #login{
+            background: transparent;
+            color: white;
+            border: 1px solid cyan;
+            position: relative;
+            display: flex;
+        }
+        
+        
+
+
+        
+        
+
+
+
+
+
+
+
+
+
+
+        @media screen and (max-width:768px) {
+        html{
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
+            background-image: url(liny.png);
+            color: rgb(200, 200, 200);
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .navigation_bar{
+            position: relative;
+            justify-content: right;
+            display: flex;
+            animation: dropdown 1s ease forwards;
+            opacity: 0;
+            padding-bottom: 4rem ;
+        }
+        @keyframes dropdown{
+            to{
+                opacity: 1;
+            }
+            from{
+                translate: 0 -30px;
+            }
+        }
+        .h3{
+            position:absolute;
+            color: cyan;
+            justify-content: left;
+            font-size: 2rem;
+            left: 0.5rem;
+            top: 0.5rem;
+            border: 1px solid cyan;
+            border-radius: 1px 9px;
+            cursor:default;
+            padding: 4px;
+            text-shadow: 0px 0px 20px cyan;
+            text-decoration: none;
+        }
+        .h3:hover{
+            text-shadow: 0px 0px 40px cyan;
+            box-shadow: 0px 0px 10px cyan;
+            cursor: pointer;
+        }
+        #pc_a{
+            display:none ;
+            text-decoration: none;
+            padding: 1.8rem;
+            color: rgb(203, 203, 203);
+            transition: 0.6s ease;
+            border-radius: 0px;
+            
+        }
+        #pc_a:hover{
+            display:none ;
+            background-color: rgb(3, 240, 248);
+            color: black;
+            opacity: 0.4;
+            border-radius:0px 20px;
+        }
+        #mobile_a{
+            display: flex;
+            text-decoration: none;
+            padding: 1.8rem;
+            color: rgb(203, 203, 203);
+            transition: 0.6s ease;
+            border-radius: 0px;
+            color: cyan;
+        }
+        #mobile_a:hover{
+            background-color: rgb(3, 240, 248);
+            color: black;
+            opacity: 0.4;
+            border-radius:0px;
+        }
+        .homebtn{
+            color: cyan;
+        }
+
+        .navigation{
+            padding: 1rem;
+            border: 0px;
+            display: flex;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            color: cyan;
+            background-color: black;
+            transition: 0.3s ease;
+            border-radius: 50px;
+        }
+        .navigation::after{
+            position: absolute;
+            content: '';
+            width: 110%;
+            height: 110%;
+            background: linear-gradient(to right,cyan, white,cyan,white);
+            z-index: -1;
+            border-radius: 50px;
+        }
+        .navigation:hover{
+            box-shadow:0px 0px 20px grey;
+            cursor: pointer;
+        }
+        .sidebar{
+            position: absolute;
+            display: flex;
+            background-color: rgb(14, 13, 13);
+            flex-direction: column;
+            justify-content:center ;
+            width: 50%;
+            right: 0;
+            z-index: 2;
+            display:none;
+            border: 1px solid cyan;
+            animation: fadein 1s forwards;
+        }
+        .backburger{
+            padding: 1rem;
+            border-radius: 50px;
+            border: 0px;
+            display: flex;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            background-color: cyan;
+            transition: 0.3s ease;
+            z-index: -11;
+        }
+        form{
+            width: 60%;
+            padding-top: 30%;
+        }
+    }
