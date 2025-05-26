@@ -30,9 +30,17 @@
             left: 1rem;
             top: 1rem;
             border: 1px solid cyan;
+            border-radius: 1px 9px;
             cursor:default;
-            padding: 10px;
+            padding: 5px;
             text-shadow: 0px 0px 10px grey;
+            text-decoration: none;
+            transition: 0.4s ease;
+        }
+        .h3:hover{
+            text-shadow: 0px 0px 40px cyan;
+            box-shadow: 0px 0px 10px cyan;
+            cursor: pointer;
         }
         #pc_a{
             text-decoration: none;
@@ -80,11 +88,12 @@
         .text{
             padding-bottom: 3rem;
         }
-        button{
+        #button{
             padding: 1rem 2rem;
             border-radius: 50px;
             letter-spacing: 0.05rem;
             font-size: 1rem;
+            text-decoration: none;
         }
         .buttons{
             display: flex;
@@ -124,6 +133,8 @@
             border: 0;
             transition: 0.5s ease;
             background:rgb(215, 215, 215) ;
+            color: black;
+            font-weight: bold;
         }
         .learnmore::after{
             content: '';
@@ -196,9 +207,16 @@
             left: 0.5rem;
             top: 0.5rem;
             border: 1px solid cyan;
+            border-radius: 1px 9px;
             cursor:default;
-            padding: 5px;
+            padding: 4px;
             text-shadow: 0px 0px 20px cyan;
+            text-decoration: none;
+        }
+        .h3:hover{
+            text-shadow: 0px 0px 40px cyan;
+            box-shadow: 0px 0px 10px cyan;
+            cursor: pointer;
         }
         #pc_a{
             display:none ;
@@ -266,15 +284,16 @@
         .text{
             padding-bottom: 3rem;
         }
-        button{
+        #button{
             padding: 0.8rem 0.6rem;
             border-radius: 50px;
             letter-spacing: 0.05rem;
             font-size: 1rem;
+            text-decoration: none;
         }
         .buttons{
             display: flex;
-            gap: 8%;
+            gap: 2.5rem;
         }
         .shopnow{
             position: relative;
@@ -310,6 +329,8 @@
             border: 0;
             transition: 0.5s ease;
             background:rgb(215, 215, 215) ;
+            color: black;
+            font-weight: bold;
         }
         .learnmore::after{
             content: '';
@@ -336,6 +357,7 @@
             color: cyan;
             background-color: black;
             transition: 0.3s ease;
+            border-radius: 50px;
         }
         .navigation::after{
             position: absolute;
@@ -361,10 +383,11 @@
             z-index: 2;
             display:none;
             border: 1px solid cyan;
-            animation: fadein 0.5s backwards;
+            animation: fadein 1s forwards;
         }
         .backburger{
             padding: 1rem;
+            border-radius: 50px;
             border: 0px;
             display: flex;
             position: absolute;
