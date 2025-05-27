@@ -5,7 +5,7 @@
             background-color: black;
             background-image: url(liny.png);
             color: rgb(200, 200, 200);
-            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
         .navigation_bar{
             position: relative;
@@ -36,6 +36,7 @@
             text-shadow: 0px 0px 10px grey;
             text-decoration: none;
             transition: 0.4s ease;
+            font-family:  'Orbitron';
         }
         .h3:hover{
             text-shadow: 0px 0px 40px cyan;
@@ -48,6 +49,7 @@
             color: rgb(203, 203, 203);
             transition: 0.6s ease;
             border-radius: 0px;
+            font-family:  'Orbitron';
             
         }
         #pc_a:hover{
@@ -64,7 +66,10 @@
             margin-bottom: 0px;
             letter-spacing: 0.3rem;
             font-size:4rem;
-            font-family:'Franklin Gothic Medium';
+            font-family:  'Orbitron';
+        }
+        h2{
+            font-family:  'Orbitron';
         }
         p{
             line-height: 2.5rem;
@@ -256,10 +261,10 @@
             margin-bottom: 0px;
             letter-spacing: 0.1rem;
             font-size:2rem;
-            font-family:'Franklin Gothic Medium';
         }
         h2{
             font-size: 1rem;
+            font-family:  'Orbitron';
         }
         p{
             font-size: 1rem;
